@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Import the component -->
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
+
 <body>
     <div>
         <!-- Use it like any other HTML element -->
-<model-viewer src="./assets/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+        <model-viewer src="./assets/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls>
+        </model-viewer>
     </div>
     <div class="android">
-        <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://abejacruz.github.io/ar-web/assets/Astronaut.glb&mode=ar_preferred#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://abejacruz.github.io/ar-web/;end;">  <img src="./img/boton_ar_android.png" height="40px" width="100%"></a>
+        <a
+            href="intent://arvr.google.com/scene-viewer/1.0?file=https://abejacruz.github.io/ar-web/assets/Astronaut.glb&mode=ar_preferred#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://abejacruz.github.io/ar-web/;end;">
+            <img src="./img/boton_ar_android.png" height="40px" width="100%"></a>
     </div>
     <diV class="ios">
         <a rel="ar" href="./assets/Astronaut.usdz">
-            <img src="./img/boton_ar_ios.png"  height="40px" width="100%" srcset="./img/boton_ar_ios.png">
+            <img src="./img/boton_ar_ios.png" height="40px" width="100%" srcset="./img/boton_ar_ios.png">
         </a>
     </diV>
     <script src="./js/deteccion.js"></script>
 </body>
+
 </html>
